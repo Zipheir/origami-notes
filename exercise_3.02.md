@@ -21,9 +21,9 @@ for e and f:
 
 The first is immediate: e = ys.  The second:
 
-    (appendL' ys) (Cons z zs) = f z ((appendL' ys) zs)
-  =   { appendL'.2, unapply appendL' }
-    Cons z (appendL' ys zs) = f z (appendL' ys zs)
+      (appendL' ys) (Cons z zs) = f z ((appendL' ys) zs)
+    =   { appendL'.2, unapply appendL' }
+      Cons z (appendL' ys zs) = f z (appendL' ys zs)
 
 and thus f = Cons.  So we have:
 
